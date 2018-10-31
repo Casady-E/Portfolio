@@ -53,14 +53,14 @@ $(document).ready(function(){
         // show all items
         if(filterValue == "all")
         {
-            $(".all").show("slow");
+            $(".all").show("medium");
         }
         else
         {
             // hide all items
-            $(".all").not('.'+filterValue).hide("slow");
+            $(".all").not('.'+filterValue).hide("medium");
             // and then, show only items with selected data-filter value
-            $(".all").filter('.'+filterValue).show("slow");
+            $(".all").filter('.'+filterValue).show("medium");
         }
     });
 });
