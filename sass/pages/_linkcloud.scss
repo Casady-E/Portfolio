@@ -1,0 +1,66 @@
+.link-cloud-container {
+  width: 100%;
+  margin: auto;
+
+  background-color: $main-color;
+  h2 {
+    font-style: normal;
+    font-size: 6em;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5vh;
+    width: 100%;
+    color: #ffffff;
+    padding: 5vh;
+    @include breakpoint(medium){
+    font-size: 4em;
+  }
+  }
+}
+.link-cloud-info{
+
+
+  text-align: center;
+
+  .link-cloud-link{
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10vh;
+  h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    @include breakpoint(medium){
+    font-size: 1em;
+  }
+  }
+.round-icon{
+  background-color: $main-color;
+  border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+padding: 0px;
+margin: 0px;
+}
+   .link-cloud-icon {
+    color: #ffffff;
+   }
+
+  a{
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover, &:focus {
+      color: $second-color;
+      .round-icon{
+        background-color: $second-color;
+      }
+      .link-cloud-icon {
+        color: $second-color;
+      }
+  }
+  }
+}
+}

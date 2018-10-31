@@ -1,0 +1,126 @@
+.intro{
+
+/*  background: #ff752b; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+/* background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #ff752b),color-stop(61%, #8241ea),to(#44aed1));
+background: linear-gradient(to bottom, #ff752b 3%,#8241ea 61%,#44aed1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff752b', endColorstr='#44aed1',GradientType=0 ); /* IE6-9 */
+overflow: hidden;
+position: relative;
+max-height: 80vh;
+min-height:70vh;
+  width: 100%;
+  background-color: $main-color;
+  padding: 10vh 5vw 0vh 5vw;
+  color: #ffffff;
+  @include breakpoint(xsmall){
+    min-height: 40vh;
+  }
+
+
+  img{
+    @include aspect-ratio(16, 9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 110%;
+    opacity: 0.7;
+    overflow: hidden;
+    max-height: 150vh;
+    min-height: 50vh;
+
+  }
+  .intro-text{
+    text-align: right;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    color: #ffffff;
+    z-index: 2;
+    @include breakpoint (small){
+      padding: 0em;
+    }
+  h3{
+    font-size: 5em;
+    font-style: $heading-font;
+    font-weight: 700;
+    @include breakpoint(medium){
+      font-size: 4em;
+    }
+    @include breakpoint(small){
+      font-size: 3em;
+    }
+  }}
+  .intro-img{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    z-index: 2;
+  .round-img-container{
+    background: #000000;
+    position: relative;
+    width: 15em;
+    height: 15em;
+    min-height: 6em;
+    border-radius: 50%;
+    text-align: center;
+    max-height: 20em;
+/*
+    border-style: solid;
+    border-width: 1em;
+    border-color: $main-color;
+    */
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url("../img/profile-pic.jpg");
+    background-position: 50%;
+    background-size: 100%;
+    @include breakpoint (medium){
+      border-width: 0.5em;
+      width: 15em;
+      height: 15em;
+    }
+    @include breakpoint (small){
+      width: 10em;
+      height: 10em;
+    }
+  }
+}
+}
+
+.heading-container{
+  width: 100%;
+  padding: 10vh 25vw;
+  margin: auto;
+  @include breakpoint(large){
+    padding: 10vh 15vw;
+  }
+  @include breakpoint(small){
+    padding: 10vh 10vw
+  }
+
+  h3{
+    font-weight: 700;
+    padding: 0vh 0vw;
+    text-align: left;
+    color: $second-color;
+    font-size: 2em;
+    strong {
+      color: $main-color;
+      font-style: italic;
+    }
+    @include breakpoint(large){
+      font-size:1.75;
+    }
+    @include breakpoint(medium){
+      font-size: 1.5em;
+    }
+    @include breakpoint(small){
+      font-size: 1.5em;
+    }
+  }
+}

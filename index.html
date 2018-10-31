@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name=”description” content="Multi-disciplined graphic designer focussing on typography, print and digital design, web development, copywriting, and illustration.">
+    <title>Ethan's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="sass/main.min.css">
+  </head>
+  <body>
+
+
+
+<section class="container-fluid intro">
+ <div class="row">
+     <!-- <img src="img/triangle-pattern-background.jpg" alt=""> -->
+     <div class="col-6 col-sm-8 col-md-8 col-lg-8 intro-text">
+
+       <h3><strong> Hi! I'm Ethan!</strong></h3>
+     </div>
+     <div class="col-6 col-sm-4 col-md-4 col-lg-4 intro-img">
+     <div class="round-img-container">
+     </div>
+     </div>
+</div>
+</section>
+
+<nav id="global-nav" class="large-nav navbar navbar-expand-md navbar-light" data-toggle="sticky-onscroll">
+    <a href="index.html" class="navbar-brand"><img src="img/brandmark-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="link-cloud.html">Link Cloud</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Sketchbook</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="container-fluid heading-container">
+  <div class="row">
+    <div class="col-12">
+      <h3> I work across multiple disciplines to create <strong>innovative </strong> and <strong> targeted </strong> design solutions.
+        The most important part of my design process is using <strong> empathy </strong> to connect with the desired audience.
+        <br>
+        <br>
+        I believe that <strong> human centered </strong> visual communication is key for any successful design project.
+        I strive to deliver outstanding results for everyone involed. <strong> Enjoy my portfolio! </strong></h3>
+    </div>
+  </div>
+</section>
+
+
+<section class="container-fluid about-container" id="about">
+  <div class="row">
+<div class="col-12">
+<h2>About</h2>
+</div>
+</div>
+  <div class="row about-icon-container">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 about-item">
+      <i class="far fa-object-group fa-4x about-icon" data-fa-transform="grow-6"></i>
+      <h3> Graphic Designer </h3>
+      <p>Advertising, Identity, Marketing, Print, Digital, Environmental, Experiential.</p>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 about-item">
+      <i class="fas fa-code fa-4x about-icon"></i>
+      <h3> Web Developer </h3>
+      <p>UI/UX, HTML5, CSS3, Bootstrap 4, SCSS, Responsive, User Research. </p>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 about-item">
+      <i class="fas fa-pencil-alt fa-4x about-icon"></i>
+      <h3> Copywriter </h3>
+      <p>Copywriting, Content Creation, Creative Writing, Editing, Product Research.</p>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 about-item">
+      <i class="fas fa-paint-brush fa-4x about-icon"></i>
+      <h3> Digital Artist </h3>
+      <p>Concept Art, Digital Painting, 3D Modeling & Animation, Illustration.</p>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+<section class="container-fluid portfolio-container" id="portfolio">
+  <div class="row">
+<div class="col-12">
+<h2>Portfolio</h2>
+</div>
+</div>
+<div class="row portfolio">
+<div class="row gallery-controls">
+    <button type="button" class="btn btn-primary category-button" data-filter= "all"> All </button>
+    <button type="button" class="btn btn-primary category-button" data-filter= "print"> Print </button>
+    <button type="button" class="btn btn-primary category-button" data-filter= "digital"> Digital </button>
+    <button type="button" class="btn btn-primary category-button" data-filter= "dev"> Development </button>
+    <button type="button" class="btn btn-primary category-button" data-filter= "advert"> Marketing </button>
+    <button type="button" class="btn btn-primary category-button" data-filter= "copywriter"> Copywriting </button>
+    <button type="button" class="btn btn-primary category-button" data-filter= "art"> Art </button>
+</div>
+
+<div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content container-fluid">
+  <div class="modal-header row">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+  <div class="modal-body row">
+    <div class="col-12">
+    <img class="enlargeImageModalSource" src="">
+  </div>
+  </div>
+  <!--  <div class="col-md-12 description">
+      <h4>This is the first one on my Gallery</h4>
+    </div>
+  -->
+</div>
+</div>
+</div>
+
+
+<div class="portfolio-gallery row">
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="Metrosphere Magazine Vol. 35 Issue 3–6" data-src="img/metrosphere-4-cover-shot.jpg">
+    <div class="hovereffect content">
+        <img class="img-responsive" src="img/metrosphere-4-cover-shot.jpg" alt="">
+            <div class="overlay">
+                <h3>Metrosphere Magazine Vol. 35 Issue 3–6 </h3>
+
+            </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital dev copywriter"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="Mercari Global Website" data-src="img/mercari-global-showcase.jpg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/mercari-global-display.jpg" alt="">
+            <div class="overlay">
+                <h3>Mercari Global Website</h3>
+
+            </div>
+    </div>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital dev copywriter"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="Mondial Tech Group Website" data-src="img/mondial-tech-showcase.jpg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/mondial-tech-display.jpg" alt="">
+            <div class="overlay">
+                <h3>Mondial Tech Group Website</h3>
+
+            </div>
+    </div>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert copywriter"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="City Bark Marketing Kit" data-src="img/city-bark-showcase1.jpg">
+
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/city-bark-bogo-flyer.jpg" alt="">
+            <div class="overlay">
+                <h3>City Bark Marketing Kit</h3>
+
+            </div>
+    </div>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert copywriter"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="City Bark Flyers" data-src="img/city-bark-showcase-2.jpg">
+
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/city-bark-yappyhour.jpg" alt="">
+            <div class="overlay">
+                <h3>City Bark Flyers</h3>
+
+            </div>
+    </div>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="NBA Lead Scorers" data-src="img/nba-scoring.jpg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/nba-scoring.jpg" alt="">
+            <div class="overlay">
+                <h3>NBA Lead Scorers</h3>
+
+            </div>
+    </div>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print digital advert"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="Flagstaff Academy" data-src="img/flagstaff-showcase.jpg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/flagstaff-academy-logo.jpg" alt="">
+            <div class="overlay">
+                <h3>Flagstaff Academy</h3>
+
+            </div>
+    </div>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert copywriter"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="Cheltenham Elementary School" data-src="img/cheltenham-showcase.jpg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/cheltenham-thumb.jpg" alt="">
+            <div class="overlay">
+                <h3>Cheltenham Elementary School</h3>
+
+            </div>
+    </div>
+
+</div>
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert copywriter"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="UPS Scholarship Advertisement" data-src="img/ups-scholarship-showcase.jpg">
+        <div class="hovereffect content">
+            <img class="img-responsive" src="img/ups-scholarship.jpg" alt="">
+                <div class="overlay">
+                    <h3>UPS Scholarship Advertisement </h3>
+
+                </div>
+        </div>
+
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital dev copywriter"
+     data-toggle="modal" data-target="#enlargeImageModal" data-title="Dr. Scruffy: The Pocket Vetrinarian" data-src="img/dr-scruffy-showcase.png">
+        <div class="hovereffect">
+            <img class="img-responsive" src="img/dr-scruffy-app-showcase.png" alt="">
+                <div class="overlay">
+                    <h3>Dr. Scruffy: The Pocket Vetrinarian</h3>
+
+                </div>
+        </div>
+
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print digital"
+     data-toggle="modal" data-target="#enlargeImageModal" data-title="Holos Concept Company" data-src="img/holos-showcase.jpg">
+        <div class="hovereffect">
+            <img class="img-responsive" src="img/holos-branding-concept-main.jpg" alt="">
+                <div class="overlay">
+                    <h3>Holos Concept Company</h3>
+
+                </div>
+        </div>
+
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital art"
+     data-toggle="modal" data-target="#enlargeImageModal" data-title="Kirby &amp; Snorlax Illustration" data-src="img/KirbySnorlaxBurger-full.jpg">
+       <div class="hovereffect">
+            <img class="img-responsive" src="img/KirbySnorlaxBurger-thumb.jpg" alt="">
+                <div class="overlay">
+                    <h3>Kirby &amp; Snorlax Illustration</h3>
+
+                </div>
+        </div>
+
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all art"
+     data-toggle="modal" data-target="#enlargeImageModal" data-title="Yami Yugi Painting" data-src="img/yami-yugi-painting.jpg">
+        <div class="hovereffect">
+            <img class="img-responsive" src="img/yami-yugi-thumb.jpg" alt="">
+                <div class="overlay">
+                    <h3>Yami Yugi Painting</h3>
+
+                </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print copywriter"
+     data-toggle="modal" data-target="#enlargeImageModal" data-title="Zeromile Issue 10" data-src="img/Zeromile-showcase.jpg">
+            <div class="hovereffect content">
+                <img class="img-responsive" src="img/Zeromile-cover.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Zeromile Issue 10 </h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="T.A.C.T. Interior Signage" data-src="img/tact-showcase.jpg">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/tact-incontext.jpg" alt="">
+                    <div class="overlay">
+                        <h3>T.A.C.T. Interior Signage</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital advert copywriter"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Magnifi Online Advertisement" data-src="img/magnifi-showcase.jpg">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/magnifi-ad-incontext.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Magnifi Online Advertisement</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print copywriter"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Paper Cranes: Origami Starter Kit" data-src="img/paper-cranes-showcase.jpg">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/paper-cranes-logo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Paper Cranes: Origami Starter Kit</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Auraria Anime Club Mascot" data-src="img/auraria-anime-club.jpg">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/auraria-anime-club-thumb.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Auraria Anime Club Mascot</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital copywriter"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Magnifi Online Website Redesign" data-src="img/magnifi-ppc-advertising-page3.jpg">
+            <div class="hovereffect content">
+                <img class="img-responsive" src="img/magnifi-ppc-advertising-page3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Magnifi Online Website Redesign </h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art"
+                 data-toggle="modal" data-target="#enlargeImageModal" data-title="Pacific Northwest Whale" data-src="img/whale-drawing.jpg">
+                   <div class="hovereffect">
+                        <img class="img-responsive" src="img/whale-drawing-thumb.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Pacific Northwest Whale</h3>
+
+                            </div>
+                    </div>
+
+                </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Kitchen Concept" data-src="img/kitchen-interior.png">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/kitchen-interior.png" alt="">
+                    <div class="overlay">
+                        <h3>Kitchen Concept</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Verve Showcase T-Shirt Design" data-src="img/verve-showcase.jpg">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/verve-showcase.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Verve Showcase T-Shirt Design</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital advert copywriter"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Adiamor Advertisement" data-src="img/Adiamor-Ad.jpg">
+                <div class="hovereffect content">
+                    <img class="img-responsive" src="img/Adiamor-Ad.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Adiamor Advertisement</h3>
+
+                        </div>
+                </div>
+
+            </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Crystal Dragon Concept" data-src="img/crystal-dragon4.jpg">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/crystal-dragon4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Crystal Dragon Concept</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Modern Kitchen" data-src="img/modern-kitchen.jpg">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/modern-kitchen.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Modern Kitchen</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="The Last Sunrise: https://vimeo.com/120556189" data-src="img/last-sunrise.png">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/last-sunrise.png" alt="">
+                    <div class="overlay">
+                        <h3>The Last Sunrise</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art"
+         data-toggle="modal" data-target="#enlargeImageModal" data-title="Greek Temple" data-src="img/greek-temple-mirror.png">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/greek-temple-thumb.png" alt="">
+                    <div class="overlay">
+                        <h3>Greek Temple</h3>
+
+                    </div>
+            </div>
+
+        </div>
+
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital advert copywriter"
+ data-toggle="modal" data-target="#enlargeImageModal" data-title="Parkside Village Advertisement" data-src="img/Parkside-Village.jpg">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/Parkside-Village.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Parkside Village Advertisement</h3>
+
+                        </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-12 load-all-container">
+              <button class="btn btn-primary load-all raised"> Load All </button>
+              </div>
+
+</div>
+</div>
+</section>
+
+
+
+
+<section class="container-fluid contact-container" id="contact">
+  <div class="row">
+    <div class="col-12">
+    <h2> Contact </h2>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 contact-info">
+
+        <div class="col-5 col-sm-5 col-md-2 col-lg-2 contact-link">
+          <a href="mailto:support@ethancasady.com?Subject=I%20Have%20A%20Question" target="_top">
+            <h3>Email</h3>
+          <i class="far fa-envelope fa-2x contact-icon"></i>
+        </a>
+      </div>
+
+       <div class="col-5 col-sm-5 col-md-2 col-lg-2 contact-link">
+         <a href="https://www.linkedin.com/in/ethan-casady/" target="_blank">
+           <h3>LinkedIn</h3>
+          <i class="fab fa-linkedin fa-2x contact-icon"></i>
+        </a>
+      </div>
+
+       <div class="col-5 col-sm-5 col-md-2 col-lg-2 contact-link">
+         <a href="https://www.behance.net/ethancasady" target="_blank">
+           <h3>Behance</h3>
+          <i class="fab fa-behance fa-2x contact-icon"></i>
+        </a>
+      </div>
+
+      <div class="col-5 col-sm-5 col-md-2 col-lg-2 contact-link">
+        <a href="https://www.github.com/RastaCakes" target="_blank">
+          <h3>Git Hub</h3>
+          <i class="fab fa-github fa-2x contact-icon"></i>
+        </a>
+      </div>
+
+</div>
+</div>
+    </div>
+</section>
+
+<button onclick="topFunction()" id="return-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+<footer class="container-fluid">
+  <div class="row footer-container">
+
+  <div class="col-12 footer-item">
+    <h4>
+      All Content Copyright Ethan Casady 2018&copy;
+  </h4>
+    <a href="index.html">
+    <img class="footer-logo img-responsive" src="img/brandmark-full.png">
+  </a>
+
+  </div>
+</div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TimelineMax.min.js"></script>
+  <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
