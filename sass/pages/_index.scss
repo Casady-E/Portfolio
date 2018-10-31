@@ -6,14 +6,14 @@ background: linear-gradient(to bottom, #ff752b 3%,#8241ea 61%,#44aed1 100%); /* 
 /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff752b', endColorstr='#44aed1',GradientType=0 ); /* IE6-9 */
 overflow: hidden;
 position: relative;
-max-height: 80vh;
-min-height:70vh;
+max-height: 40vh;
+min-height:30vh;
   width: 100%;
   background-color: $main-color;
   padding: 10vh 5vw 0vh 5vw;
   color: #ffffff;
   @include breakpoint(xsmall){
-    min-height: 40vh;
+    min-height: 30vh;
   }
 
 
