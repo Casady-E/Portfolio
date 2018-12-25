@@ -95,23 +95,54 @@ function allComplete(){
 };
 
 
-
 //Modal gallery
+
+document.addEventListener('click', function(event){
+let portfolio = document.querySelector("#portfolio-item");
+  if (event.target.id == "overlay"){
+    let item = event.target;
+    console.log(item)
+    callback();
+function callback(){
+  let title = portfolio.dataset.title;
+  let desc = portfolio.querySelector("#desc").innerText;
+  let image = portfolio.dataset.src;
+  let modal = document.querySelector('.modal');
+  modal.querySelector('.modal-title').textContent = title;
+  modal.querySelector('.modal-desc').textContent = desc;
+  modal.querySelector('.enlargeImageModalSource').src = image;
+
+};
+};
+});
+/*
+
+let modal = document.querySelector(".modal");
+console.log(modal);
+let modalTitle = document.querySelector(".modal-header")
+
+modal.find('.enlargeImageModalSource').textContent = (image);
+
+document.querySelector(title).setAttribute('title', title);
 
 $(document).ready(function() {
 $('#enlargeImageModal').on('show.bs.modal', function (event) {
   var title = $(event.relatedTarget);
   var galleryTitle = title.data('title');
   var image = $(event.relatedTarget);
-  var galleryImage =  image.data('src');
+  var galleryImage = image.data('src');
+  var desc = $(event.relatedTarget);
+  var galleryDesc = desc.data('gallery');
   // $('.portfolio-item .gallery-image').attr('src');
-
 
   var modal = $(this);
       modal.find('.modal-title').text(galleryTitle);
+      modal.find('.modalDesc').text(galleryDesc);
       modal.find('.enlargeImageModalSource').attr('src', galleryImage);
 		});
 });
+*/
+
 
 //Gallery Controls
 $('.category-button').click(function(e) {
