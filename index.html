@@ -13,8 +13,6 @@
   </head>
   <body>
 
-    <button class="trigger">Click here to trigger the modal!</button>
-
 <section class="container-fluid intro">
  <div class="row">
      <!-- <img src="img/triangle-pattern-background.jpg" alt=""> -->
@@ -112,11 +110,11 @@
 <div class="row portfolio">
 <div class="row gallery-controls">
     <button type="button" class="btn btn-primary category-button" data-filter= "all"> All </button>
-    <button type="button" class="btn btn-primary category-button" data-filter= "print"> Print </button>
-    <button type="button" class="btn btn-primary category-button" data-filter= "digital"> Digital </button>
     <button type="button" class="btn btn-primary category-button" data-filter= "ui"> UI/UX </button>
     <button type="button" class="btn btn-primary category-button" data-filter= "brand"> Branding </button>
     <button type="button" class="btn btn-primary category-button" data-filter= "dev"> Development </button>
+    <button type="button" class="btn btn-primary category-button" data-filter= "print"> Print </button>
+    <button type="button" class="btn btn-primary category-button" data-filter= "digital"> Digital </button>
     <button type="button" class="btn btn-primary category-button" data-filter= "advert"> Marketing </button>
     <button type="button" class="btn btn-primary category-button" data-filter= "copywriter"> Copywriting </button>
     <button type="button" class="btn btn-primary category-button" data-filter= "art"> Art </button>
@@ -141,14 +139,6 @@
     <p class="modal-desc" id="modalDesc"></p>
   </div>
   </div>
-<!--
-  <div class="modal">
-      <div class="modal-content">
-          <span class="close-button">×</span>
-          <h1>Hello, I am a modal!</h1>
-      </div>
-  </div>
--->
 
 </div>
 </div>
@@ -156,22 +146,22 @@
 
 <div class="portfolio-gallery row">
 
-  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print digital brand" id="portfolio-item"
+  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print digital brand" id="portfolioItem"
    data-toggle="modal" data-target="#enlargeImageModal" data-title="En Garde Brandmark" data-src="img/eg-logo-showcase.jpg">
    <div id="desc">
      <p> This is the description for the portfolio item. This is what it will
        look like when there is eventually a description for this portfolio item.
      </p>
    </div>
-      <div class="hovereffect">
-          <img class="img-responsive" src="img/eg-logo-thumb.jpg" alt="">
-              <div class="overlay" id="overlay">
-                  <h3>En Garde Brandmark</h3>
+      <div class="hovereffect" id="hoverEffect">
+          <img id="galleryImage" class="img-responsive" src="img/eg-logo-thumb.jpg" alt="">
+              <div class="overlay" id="modalOverlay">
+                  <h3 id="overlayHead">En Garde Brandmark</h3>
               </div>
       </div>
   </div>
 
-  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital ui copywriter" id="portfolio-item"
+  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital ui copywriter" id="portfolioItem"
    data-toggle="modal" data-target="#enlargeImageModal" data-title="En Garde App Onboarding" data-src="img/eg-onboard-showcase.jpg">
 
    <div id="desc">
@@ -180,17 +170,17 @@
      </p>
    </div>
 
-      <div class="hovereffect">
-          <img class="img-responsive" src="img/eg-onboard-thumb.jpg" alt="">
-              <div class="overlay" id="overlay">
-                  <h3>En Garde App Onboarding</h3>
+      <div class="hovereffect" id="hoverEffect">
+          <img id="galleryImage" class="img-responsive" src="img/eg-onboard-thumb.jpg" alt="">
+              <div class="overlay" id="modalOverlay">
+                  <h3 id="overlayHead">En Garde App Onboarding</h3>
 
               </div>
       </div>
 
   </div>
 
-  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all ui copywriter" id="portfoli-item"
+  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all ui copywriter" id="portfolioItem"
    data-toggle="modal" data-target="#enlargeImageModal" data-title="En Garde App Menu" data-src="img/eg-menu-showcase.jpg">
 
    <div id="desc">
@@ -199,17 +189,17 @@
      </p>
    </div>
 
-      <div class="hovereffect">
-          <img class="img-responsive" src="img/eg-menu-thumb.jpg" alt="">
-              <div class="overlay" id="overlay">
-                  <h3>En Garde App Menu</h3>
+      <div class="hovereffect" id="hoverEffect">
+          <img id="galleryImage" class="img-responsive" src="img/eg-menu-thumb.jpg" alt="">
+              <div class="overlay" id="modalOverlay">
+                  <h3 id="overlayHead">En Garde App Menu</h3>
 
               </div>
       </div>
 
   </div>
 
-  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital ui copywriter" id="portfolio-item"
+  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital ui copywriter" id="portfolioItem"
    data-toggle="modal" data-target="#enlargeImageModal" data-title="En Garde App Showcase 1" data-src="img/eg-app1-showcase.jpg">
 
    <div id="desc">
@@ -218,17 +208,17 @@
      </p>
    </div>
 
-      <div class="hovereffect">
-          <img class="img-responsive" src="img/eg-app1-thumb.jpg" alt="">
-              <div class="overlay" id="overlay">
-                  <h3>En Garde App Showcase 1</h3>
+      <div class="hovereffect" id="hoverEffect">
+          <img id="galleryImage" class="img-responsive" src="img/eg-app1-thumb.jpg" alt="">
+              <div class="overlay" id="modalOverlay">
+                  <h3 id="overlayHead">En Garde App Showcase 1</h3>
 
               </div>
       </div>
 
   </div>
 
-  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital ui copywriter" id="portfolio-item"
+  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital ui copywriter" id="portfolioItem"
    data-toggle="modal" data-target="#enlargeImageModal" data-title="En Garde App Showcase 2" data-src="img/eg-app2-showcase.jpg">
 
    <div id="desc">
@@ -237,17 +227,17 @@
      </p>
    </div>
 
-      <div class="hovereffect">
-          <img class="img-responsive" src="img/eg-app2-thumb.jpg" alt="">
-              <div class="overlay" id="overlay">
-                  <h3>En Garde App Showcase 2</h3>
+      <div class="hovereffect" id="hoverEffect">
+          <img id="galleryImage" class="img-responsive" src="img/eg-app2-thumb.jpg" alt="">
+              <div class="overlay" id="modalOverlay">
+                  <h3 id="overlayHead">En Garde App Showcase 2</h3>
 
               </div>
       </div>
 
   </div>
 
-  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print digital art" id="portfolio-item"
+  <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print digital art" id="portfolioItem"
    data-toggle="modal" data-target="#enlargeImageModal" data-title="Glorious Pineapple" data-src="img/glorious-pineapple-showcase.jpg">
 
    <div id="desc">
@@ -256,17 +246,17 @@
      </p>
    </div>
 
-      <div class="hovereffect">
-          <img class="img-responsive" src="img/glorious-pineapple-showcase-thumb.jpg" alt="">
-              <div class="overlay" id="overlay">
-                  <h3>Glorious Pineapple</h3>
+      <div class="hovereffect" id="hoverEffect">
+          <img id="galleryImage" class="img-responsive" src="img/glorious-pineapple-showcase-thumb.jpg" alt="">
+              <div class="overlay" id="modalOverlay">
+                  <h3 id="overlayHead">Glorious Pineapple</h3>
 
               </div>
       </div>
 
   </div>
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="Metrosphere Magazine Vol. 35 Issue 3–6" data-src="img/metrosphere-4-cover-shot.jpg">
 
  <div id="desc">
@@ -275,16 +265,16 @@
    </p>
  </div>
 
-    <div class="hovereffect content">
-        <img class="img-responsive" src="img/metrosphere-4-cover-shot.jpg" alt="">
-            <div class="overlay" id="overlay">
-                <h3>Metrosphere Magazine Vol. 35 Issue 3–6 </h3>
+    <div class="hovereffect" id="hoverEffect">
+        <img id="galleryImage" class="img-responsive" src="img/metrosphere-4-cover-shot.jpg" alt="">
+            <div class="overlay" id="modalOverlay">
+                <h3 id="overlayHead">Metrosphere Magazine Vol. 35 Issue 3–6 </h3>
 
             </div>
     </div>
 </div>
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital dev ui copywriter" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital dev ui copywriter" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="Mercari Global Website" data-src="img/mercari-global-showcase.jpg">
 
  <div id="desc">
@@ -293,17 +283,17 @@
    </p>
  </div>
 
-    <div class="hovereffect">
-        <img class="img-responsive" src="img/mercari-global-display.jpg" alt="">
-            <div class="overlay" id="overlay">
-                <h3>Mercari Global Website</h3>
+    <div class="hovereffect" id="hoverEffect">
+        <img id="galleryImage" class="img-responsive" src="img/mercari-global-display.jpg" alt="">
+            <div class="overlay" id="modalOverlay">
+                <h3 id="overlayHead">Mercari Global Website</h3>
 
             </div>
     </div>
 
 </div>
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital dev ui copywriter" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital dev ui copywriter" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="Mondial Tech Group Website" data-src="img/mondial-tech-showcase.jpg">
 
  <div id="desc">
@@ -312,17 +302,17 @@
    </p>
  </div>
 
-    <div class="hovereffect">
-        <img class="img-responsive" src="img/mondial-tech-display.jpg" alt="">
-            <div class="overlay" id="overlay">
-                <h3>Mondial Tech Group Website</h3>
+    <div class="hovereffect" id="hoverEffect">
+        <img id="galleryImage" class="img-responsive" src="img/mondial-tech-display.jpg" alt="">
+            <div class="overlay" id="modalOverlay">
+                <h3 id="overlayHead">Mondial Tech Group Website</h3>
 
             </div>
     </div>
 
 </div>
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert digital copywriter" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert digital copywriter" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="City Bark Marketing Promotions" data-src="img/city-bark-showcase3.jpg">
 
  <div id="desc">
@@ -331,17 +321,17 @@
    </p>
  </div>
 
-    <div class="hovereffect">
-        <img class="img-responsive" src="img/city-bark-thumb3.jpg" alt="">
-            <div class="overlay" id="overlay">
-                <h3>City Bark Marketing Promotions</h3>
+    <div class="hovereffect" id="hoverEffect">
+        <img id="galleryImage" class="img-responsive" src="img/city-bark-thumb3.jpg" alt="">
+            <div class="overlay" id="modalOverlay">
+                <h3 id="overlayHead">City Bark Marketing Promotions</h3>
 
             </div>
     </div>
 
 </div>
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert copywriter" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert copywriter" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="City Bark Flyers" data-src="img/city-bark-showcase-2.jpg">
 
  <div id="desc">
@@ -350,17 +340,17 @@
    </p>
  </div>
 
-    <div class="hovereffect">
-        <img class="img-responsive" src="img/city-bark-yappyhour.jpg" alt="">
-            <div class="overlay" id="overlay">
-                <h3>City Bark Flyers</h3>
+    <div class="hovereffect" id="hoverEffect">
+        <img id="galleryImage" class="img-responsive" src="img/city-bark-yappyhour.jpg" alt="">
+            <div class="overlay" id="modalOverlay">
+                <h3 id="overlayHead">City Bark Flyers</h3>
 
             </div>
     </div>
 
 </div>
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="NBA Lead Scorers" data-src="img/nba-scoring.jpg">
 
  <div id="desc">
@@ -369,17 +359,17 @@
    </p>
  </div>
 
-    <div class="hovereffect">
-        <img class="img-responsive" src="img/nba-scoring.jpg" alt="">
-            <div class="overlay" id="overlay">
-                <h3>NBA Lead Scorers</h3>
+    <div class="hovereffect" id="hoverEffect">
+        <img id="galleryImage" class="img-responsive" src="img/nba-scoring.jpg" alt="">
+            <div class="overlay" id="modalOverlay">
+                <h3 id="overlayHead">NBA Lead Scorers</h3>
 
             </div>
     </div>
 
 </div>
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print digital brand advert" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print digital brand advert" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="Flagstaff Academy" data-src="img/flagstaff-showcase.jpg">
 
  <div id="desc">
@@ -388,17 +378,17 @@
    </p>
  </div>
 
-    <div class="hovereffect">
-        <img class="img-responsive" src="img/flagstaff-academy-logo.jpg" alt="">
-            <div class="overlay" id="overlay">
-                <h3>Flagstaff Academy</h3>
+    <div class="hovereffect" id="hoverEffect">
+        <img id="galleryImage" class="img-responsive" src="img/flagstaff-academy-logo.jpg" alt="">
+            <div class="overlay" id="modalOverlay">
+                <h3 id="overlayHead">Flagstaff Academy</h3>
 
             </div>
     </div>
 
 </div>
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert copywriter" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all print advert copywriter" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="Cheltenham Elementary School" data-src="img/cheltenham-showcase.jpg">
 
  <div id="desc">
@@ -407,10 +397,10 @@
    </p>
  </div>
 
-    <div class="hovereffect">
-        <img class="img-responsive" src="img/cheltenham-thumb.jpg" alt="">
-            <div class="overlay" id="overlay">
-                <h3>Cheltenham Elementary School</h3>
+    <div class="hovereffect" id="hoverEffect">
+        <img id="galleryImage" class="img-responsive" src="img/cheltenham-thumb.jpg" alt="">
+            <div class="overlay" id="modalOverlay">
+                <h3 id="overlayHead">Cheltenham Elementary School</h3>
 
             </div>
     </div>
@@ -427,17 +417,17 @@
    </p>
  </div>
 
-        <div class="hovereffect content">
-            <img class="img-responsive" src="img/ups-scholarship.jpg" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>UPS Scholarship Advertisement </h3>
+        <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/ups-scholarship.jpg" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">UPS Scholarship Advertisement </h3>
 
                 </div>
         </div>
 
     </div>
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital ui copywriter" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item all digital ui copywriter" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Dr. Scruffy: The Pocket Vetrinarian" data-src="img/dr-scruffy-showcase.png">
 
      <div id="desc">
@@ -446,17 +436,17 @@
        </p>
      </div>
 
-        <div class="hovereffect">
-            <img class="img-responsive" src="img/dr-scruffy-app-showcase.png" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>Dr. Scruffy: The Pocket Vetrinarian</h3>
+        <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/dr-scruffy-app-showcase.png" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">Dr. Scruffy: The Pocket Vetrinarian</h3>
 
                 </div>
         </div>
 
     </div>
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Pylon Butterfly" data-src="img/pylon-showcase.jpg">
 
      <div id="desc">
@@ -465,17 +455,17 @@
        </p>
      </div>
 
-        <div class="hovereffect">
-            <img class="img-responsive" src="img/pylon-showcase-thumb.jpg" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>Pylon Butterfly</h3>
+        <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/pylon-showcase-thumb.jpg" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">Pylon Butterfly</h3>
 
                 </div>
         </div>
 
     </div>
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Oh My Gourd!" data-src="img/gourd-showcase.jpg">
 
      <div id="desc">
@@ -484,10 +474,10 @@
        </p>
      </div>
 
-        <div class="hovereffect">
-            <img class="img-responsive" src="img/gourd-showcase-thumb.jpg" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>Oh My Gourd!</h3>
+        <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/gourd-showcase-thumb.jpg" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">Oh My Gourd!</h3>
 
                 </div>
         </div>
@@ -495,7 +485,7 @@
     </div>
 
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Neon Elephant" data-src="img/elephant-showcase.jpg">
 
      <div id="desc">
@@ -504,17 +494,17 @@
        </p>
      </div>
 
-        <div class="hovereffect">
-            <img class="img-responsive" src="img/elephant-showcase-thumb.jpg" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>Neon Elephant</h3>
+        <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/elephant-showcase-thumb.jpg" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">Neon Elephant</h3>
 
                 </div>
         </div>
 
     </div>
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print advert copywriter" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print advert copywriter" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="City Bark Marketing Kit" data-src="img/city-bark-showcase1.jpg">
 
      <div id="desc">
@@ -523,17 +513,17 @@
        </p>
      </div>
 
-        <div class="hovereffect">
-            <img class="img-responsive" src="img/city-bark-bogo-flyer.jpg" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>City Bark Marketing Kit</h3>
+        <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/city-bark-bogo-flyer.jpg" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">City Bark Marketing Kit</h3>
 
                 </div>
         </div>
 
     </div>
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital brand" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital brand" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Holos Concept Company" data-src="img/holos-showcase.jpg">
 
      <div id="desc">
@@ -542,10 +532,10 @@
        </p>
      </div>
 
-        <div class="hovereffect">
-            <img class="img-responsive" src="img/holos-branding-concept-main.jpg" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>Holos Concept Company</h3>
+      <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/holos-branding-concept-main.jpg" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">Holos Concept Company</h3>
 
                 </div>
         </div>
@@ -553,7 +543,7 @@
     </div>
 
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Decorative Anchor" data-src="img/anchor-showcase.jpg">
 
      <div id="desc">
@@ -562,10 +552,10 @@
        </p>
      </div>
 
-        <div class="hovereffect" id="overlay">
-            <img class="img-responsive" src="img/anchor-showcase-thumb.jpg" alt="">
+      <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/anchor-showcase-thumb.jpg" alt="">
                 <div class="overlay">
-                    <h3>Decorative Anchor</h3>
+                    <h3 id="overlayHead">Decorative Anchor</h3>
 
                 </div>
         </div>
@@ -573,7 +563,7 @@
     </div>
 
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital art" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital art" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Kirby &amp; Snorlax Illustration" data-src="img/KirbySnorlaxBurger-full.jpg">
 
      <div id="desc">
@@ -582,17 +572,17 @@
        </p>
      </div>
 
-       <div class="hovereffect">
-            <img class="img-responsive" src="img/KirbySnorlaxBurger-thumb.jpg" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>Kirby &amp; Snorlax Illustration</h3>
+      <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/KirbySnorlaxBurger-thumb.jpg" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">Kirby &amp; Snorlax Illustration</h3>
 
                 </div>
         </div>
 
     </div>
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital art" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital art" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Yami Yugi Painting" data-src="img/yami-yugi-painting.jpg">
 
      <div id="desc">
@@ -601,10 +591,10 @@
        </p>
      </div>
 
-        <div class="hovereffect">
-            <img class="img-responsive" src="img/yami-yugi-thumb.jpg" alt="">
-                <div class="overlay" id="overlay">
-                    <h3>Yami Yugi Painting</h3>
+        <div class="hovereffect" id="hoverEffect">
+            <img id="galleryImage" class="img-responsive" src="img/yami-yugi-thumb.jpg" alt="">
+                <div class="overlay" id="modalOverlay">
+                    <h3 id="overlayHead">Yami Yugi Painting</h3>
 
                 </div>
         </div>
@@ -614,7 +604,7 @@
 
 
 
-    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print copywriter" id="portfolio-item"
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print copywriter" id="portfolioItem"
      data-toggle="modal" data-target="#enlargeImageModal" data-title="Zeromile Issue 10" data-src="img/Zeromile-showcase.jpg">
 
      <div id="desc">
@@ -623,17 +613,17 @@
        </p>
      </div>
 
-            <div class="hovereffect content">
-                <img class="img-responsive" src="img/Zeromile-cover.jpg" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>Zeromile Issue 10 </h3>
+      <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/Zeromile-cover.jpg" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">Zeromile Issue 10 </h3>
 
                     </div>
             </div>
 
         </div>
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print digital art" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="Aloha Sunset" data-src="img/aloha-showcase.jpg">
 
          <div id="desc">
@@ -642,10 +632,10 @@
            </p>
          </div>
 
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/aloha-showcase-thumb.jpg" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>Aloha Sunset</h3>
+          <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/aloha-showcase-thumb.jpg" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">Aloha Sunset</h3>
 
                     </div>
             </div>
@@ -653,7 +643,7 @@
         </div>
 
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="T.A.C.T. Interior Signage" data-src="img/tact-showcase.jpg">
 
          <div id="desc">
@@ -662,17 +652,17 @@
            </p>
          </div>
 
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/tact-incontext.jpg" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>T.A.C.T. Interior Signage</h3>
+          <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/tact-incontext.jpg" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">T.A.C.T. Interior Signage</h3>
 
                     </div>
             </div>
 
         </div>
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital advert copywriter" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital advert copywriter" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="Magnifi Online Advertisement" data-src="img/magnifi-showcase.jpg">
 
          <div id="desc">
@@ -681,17 +671,17 @@
            </p>
          </div>
 
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/magnifi-ad-incontext.jpg" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>Magnifi Online Advertisement</h3>
+            <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/magnifi-ad-incontext.jpg" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">Magnifi Online Advertisement</h3>
 
                     </div>
             </div>
 
         </div>
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print brand copywriter" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print brand copywriter" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="Paper Cranes: Origami Starter Kit" data-src="img/paper-cranes-showcase.jpg">
 
          <div id="desc">
@@ -700,17 +690,17 @@
            </p>
          </div>
 
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/paper-cranes-logo.jpg" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>Paper Cranes: Origami Starter Kit</h3>
+          <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/paper-cranes-logo.jpg" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">Paper Cranes: Origami Starter Kit</h3>
 
                     </div>
             </div>
 
         </div>
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="Kitchen Concept" data-src="img/kitchen-interior.png">
 
          <div id="desc">
@@ -719,17 +709,17 @@
            </p>
          </div>
 
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/kitchen-interior.png" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>Kitchen Concept</h3>
+          <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/kitchen-interior.png" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">Kitchen Concept</h3>
 
                     </div>
             </div>
 
         </div>
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all print" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="Verve Showcase T-Shirt Design" data-src="img/verve-showcase.jpg">
 
          <div id="desc">
@@ -738,17 +728,17 @@
            </p>
          </div>
 
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/verve-showcase.jpg" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>Verve Showcase T-Shirt Design</h3>
+        <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/verve-showcase.jpg" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">Verve Showcase T-Shirt Design</h3>
 
                     </div>
             </div>
 
         </div>
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital advert copywriter" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital advert copywriter" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="Adiamor Advertisement" data-src="img/Adiamor-Ad.jpg">
 
          <div id="desc">
@@ -757,17 +747,17 @@
            </p>
          </div>
 
-                <div class="hovereffect content">
-                    <img class="img-responsive" src="img/Adiamor-Ad.jpg" alt="">
-                        <div class="overlay" id="overlay">
-                            <h3>Adiamor Advertisement</h3>
+          <div class="hovereffect" id="hoverEffect">
+                    <img id="galleryImage" class="img-responsive" src="img/Adiamor-Ad.jpg" alt="">
+                        <div class="overlay" id="modalOverlay">
+                            <h3 id="overlayHead">Adiamor Advertisement</h3>
 
                         </div>
                 </div>
 
             </div>
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="Modern Kitchen" data-src="img/modern-kitchen.jpg">
 
          <div id="desc">
@@ -776,17 +766,17 @@
            </p>
          </div>
 
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/modern-kitchen.jpg" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>Modern Kitchen</h3>
+          <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/modern-kitchen.jpg" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">Modern Kitchen</h3>
 
                     </div>
             </div>
 
         </div>
 
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art" id="portfolio-item"
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all art" id="portfolioItem"
          data-toggle="modal" data-target="#enlargeImageModal" data-title="Greek Temple" data-src="img/greek-temple-mirror.png">
 
          <div id="desc">
@@ -795,10 +785,10 @@
            </p>
          </div>
 
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/greek-temple-thumb.png" alt="">
-                    <div class="overlay" id="overlay">
-                        <h3>Greek Temple</h3>
+          <div class="hovereffect" id="hoverEffect">
+                <img id="galleryImage" class="img-responsive" src="img/greek-temple-thumb.png" alt="">
+                    <div class="overlay" id="modalOverlay">
+                        <h3 id="overlayHead">Greek Temple</h3>
 
                     </div>
             </div>
@@ -807,7 +797,7 @@
 
 
 
-<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital advert copywriter" id="portfolio-item"
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 portfolio-item xtra-gal all digital advert copywriter" id="portfolioItem"
  data-toggle="modal" data-target="#enlargeImageModal" data-title="Parkside Village Advertisement" data-src="img/Parkside-Village.jpg">
 
  <div id="desc">
@@ -816,10 +806,10 @@
    </p>
  </div>
 
-                <div class="hovereffect">
-                    <img class="img-responsive" src="img/Parkside-Village.jpg" alt="">
-                        <div class="overlay" id="overlay">
-                            <h3>Parkside Village Advertisement</h3>
+      <div class="hovereffect" id="hoverEffect">
+                    <img id="galleryImage" class="img-responsive" src="img/Parkside-Village.jpg" alt="">
+                        <div class="overlay" id="modalOverlay">
+                            <h3 id="overlayHead">Parkside Village Advertisement</h3>
 
                         </div>
                 </div>
