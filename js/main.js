@@ -96,22 +96,80 @@ function allComplete(){
 
 
 //Modal gallery
+document.addEventListener('mouseover', function(event){
+  //let portfolioItem = document.querySelector(".hovereffect");
+  if (event.target.id == "hoverEffect"){
+    var item = event.target.parentNode
+    item.addEventListener('click', function(event){
+    populateModal();
+  });
+  }
+   else if (event.target.id == "portfolioItem"){
+     var item = event.target;
+     item.addEventListener('click', function(event){
+     populateModal();
+   });
+ } else if (event.target.id == "galleryImage"){
+     var item = event.target.parentNode.parentNode;
+     item.addEventListener('click', function(event){
+     populateModal();
+   });
+ } else if (event.target.id == "modalOverlay"){
+     var item = event.target.parentNode.parentNode;
+     item.addEventListener('click', function(event){
+     populateModal();
+   });
+ }  else if (event.target.id == "overlayHead"){
+     var item = event.target.parentNode.parentNode.parentNode;
+     item.addEventListener('click', function(event){
+     populateModal();
+   });
+   }
+    function populateModal(){
+      console.log(item);
+      let title = item.dataset.title;
+      let desc = item.querySelector("#desc").innerText;
+      let image = item.dataset.src;
+      let modal = document.querySelector('.modal');
+      console.log(title + desc +image);
+      modal.querySelector('.modal-title').textContent = title;
+      modal.querySelector('.modal-desc').textContent = desc;
+      modal.querySelector('.enlargeImageModalSource').src = image;
+      //item.removeEventListener('click');
+    };
 
+})
+/*
 document.addEventListener('click', function(event){
-  if (event.target.id == "overlay"){
+  if (event.target.id == "modalOverlay"){
     let item = event.target.parentNode.parentNode;
     populateModal();
-function populateModal(){
-  let title = item.dataset.title;
-  let desc = item.querySelector("#desc").innerText;
-  let image = item.dataset.src;
-  let modal = document.querySelector('.modal');
-  modal.querySelector('.modal-title').textContent = title;
-  modal.querySelector('.modal-desc').textContent = desc;
-  modal.querySelector('.enlargeImageModalSource').src = image;
+    function populateModal(){
+      let title = item.dataset.title;
+      let desc = item.querySelector("#desc").innerText;
+      let image = item.dataset.src;
+      let modal = document.querySelector('.modal');
+      modal.querySelector('.modal-title').textContent = title;
+      modal.querySelector('.modal-desc').textContent = desc;
+      modal.querySelector('.enlargeImageModalSource').src = image;
+    };
+} else if (event.target.id == "overlayHead"){
+  let item = event.target.parentNode.parentNode.parentNode;
+  console.log(item);
+  populateModal();
+  function populateModal(){
+    let title = item.dataset.title;
+    let desc = item.querySelector("#desc").innerText;
+    let image = item.dataset.src;
+    let modal = document.querySelector('.modal');
+    modal.querySelector('.modal-title').textContent = title;
+    modal.querySelector('.modal-desc').textContent = desc;
+    modal.querySelector('.enlargeImageModalSource').src = image;
+  };
 };
-};
+
 });
+*/
 /*
 
 let portfolio = document.querySelector("#portfolio-item");
