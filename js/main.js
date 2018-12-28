@@ -120,16 +120,17 @@ document.addEventListener('mouseover', function(event){
    });
    }
     function populateModal(){
-      console.log(item);
       let title = item.dataset.title;
       let desc = item.querySelector("#desc").innerText;
       let image = item.dataset.src;
       let modal = document.querySelector('.modal');
-      console.log(title + desc +image);
       modal.querySelector('.modal-title').textContent = title;
       modal.querySelector('.modal-desc').textContent = desc;
       modal.querySelector('.enlargeImageModalSource').src = image;
-      //item.removeEventListener('click');
+      item.removeEventListener('click', function(event)
+    {
+
+    });
     };
 
 });
