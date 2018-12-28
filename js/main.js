@@ -41,10 +41,6 @@ $(document).ready(function() {
 });
 
 //Filter gallery
-/*
-    Author: Akshay Nagpal (github.com/akshaynagpal)
-    License: MIT
-*/
 $(document).ready(function(){
     // clicking button with class "category-button"
     $(".category-button").click(function(){
@@ -82,8 +78,6 @@ function loadAll()
 */
 
 //GSAP
-
-
 var Anim = new TimelineMax();
 Anim.staggerFrom(".portfolio-item", 0.25, {opacity:0, y:-100}, 0.1);
 $(".category-button").click(function(){
