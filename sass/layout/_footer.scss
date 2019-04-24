@@ -2,38 +2,48 @@ footer {
   background-color: #3C3C3C;
   .footer-container{
     width: 100%;
-    padding: 2.5vh 25vw;
+    padding: 2.5vh 0vw;
     margin: auto;
     color: #ffffff;
     text-align: center;
     @include breakpoint(small){
-      padding: 2.5vh 15vw;
+      padding: 2.5vh 0vw;
     }
     @include breakpoint(xsmall){
       padding: 2.5vh 0vw
     }
     .footer-item{
-      display: inline-block;
       overflow: hidden;
-      padding: 0;
+      padding: 0em;
+      width: 100%;
       text-align: center;
+      margin: auto;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
       @include breakpoint(small){
         margin: 0;
       }
-
+      a{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+      }
     h4{
       margin: auto;
-      text-align: center;
+      text-align: right;
       width: 100%;
       font-size:1em;
     }
   }
+  .l-align h4{
+    text-align: left;
+  }
     .footer-logo{
+      margin: auto;
+      text-align: center;
       max-height: 25vh;
-      height: 10vh;
+      min-height: 8vh;
       @include breakpoint(medium){
         height: 8vh;
       }
