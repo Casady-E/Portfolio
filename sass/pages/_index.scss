@@ -6,44 +6,42 @@ background: linear-gradient(to bottom, #ff752b 3%,#8241ea 61%,#44aed1 100%); /* 
 /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff752b', endColorstr='#44aed1',GradientType=0 ); /* IE6-9 */
 overflow: hidden;
 position: relative;
-max-height: 40vh;
-min-height:30vh;
+max-height: 80vh;
+min-height:60vh;
   width: 100%;
   background-color: $main-color;
-  padding: 10vh 5vw 0vh 5vw;
+  padding: 5vh 0vw 0vh 5vw;
   color: #ffffff;
-  @include breakpoint(xsmall){
-    min-height: 30vh;
-  }
-
-
   img{
-    @include aspect-ratio(16, 9);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    text-align: center;
+    margin: auto;
     z-index: 1;
-    top: 0;
-    left: 0;
-    width: 110%;
-    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    max-width: 70vh;
+    opacity: 1;
     overflow: hidden;
-    max-height: 150vh;
-    min-height: 50vh;
 
+  }
+  @include breakpoint(xsmall){
+    min-height: 30vh;
   }
   .intro-text{
     text-align: center;
     margin: auto;
     width: 100%;
     height: 100%;
-    padding: 3em;
+    padding: 0em;
     color: #ffffff;
     z-index: 2;
     @include breakpoint (small){
       padding: 0em;
     }
+
   h3{
     font-size: 5em;
     font-style: $heading-font;
@@ -94,20 +92,20 @@ min-height:30vh;
 
 .heading-container{
   width: 100%;
-  padding: 10vh 25vw;
+  padding: 5vh 25vw;
   margin: auto;
   @include breakpoint(large){
-    padding: 10vh 15vw;
+    padding: 5vh 15vw;
   }
   @include breakpoint(small){
-    padding: 10vh 10vw
+    padding: 5vh 10vw
   }
 
   h3{
     font-weight: 700;
     padding: 0vh 0vw;
     text-align: left;
-    color: $second-color;
+    color: #000000;
     font-size: 2em;
     strong {
       color: $main-color;
