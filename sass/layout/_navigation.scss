@@ -10,6 +10,7 @@ $dropDown       : true;
   border-bottom: 2px;
   z-index: 1500;
   color: #ffffff;
+  padding: 0rem 1rem;
   .navbar-brand {
     color: $navDefault;
     &:hover, &:focus {
@@ -96,6 +97,7 @@ $dropDown       : true;
   -webkit-box-shadow: 0px 10px 35px -4px rgba(0,0,0,0.75);
     box-shadow: 0px 10px 35px -4px rgba(0,0,0,0.75);
     background-color: #ffffff;
+  padding: 0.5rem 1rem;
     .nav-link {
       color: #000000;
       font-size: 1em;
