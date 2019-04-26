@@ -119,16 +119,38 @@ document.addEventListener('mouseover', function(event){
      populateModal();
    });
    }
+
+   function getFilePathExtension(path) {
+     var filename = path.split('\\').pop().split('/').pop();
+     var lastIndex = filename.lastIndexOf(".");
+     if (lastIndex < 1) return "";
+     return filename.substr(lastIndex + 1);
+   }
+
     function populateModal(){
       let title = item.dataset.title;
       let desc = item.querySelector(".desc").innerText;
-      let image = item.dataset.src;
       let modal = document.querySelector('.modal');
       modal.querySelector('.modal-title').textContent = title;
       modal.querySelector('.modal-desc').textContent = desc;
-      modal.querySelector('.enlargeImageModalSource').src = image;
-      item.removeEventListener('click', function(event)
-    {});
+      item.removeEventListener('click', function(event){});
+      let fileType = getFilePathExtension(item.dataset.src);
+      if(fileType == 'jpg' || fileType == 'png' ){
+        let image = item.dataset.src
+        modal.querySelector('.enlargeImageModalSource').src = image;
+        modal.querySelector('.enlargeImageModalSource').style.display = 'block';
+        modal.querySelector('.embedVideoSource').style.display = 'none';
+        return fileType = '0';
+
+      } else if (fileType == 'mp4'){
+        let video = item.dataset.src
+        modal.querySelector('.enlargeImageModalSource').style.display = 'none';
+        modal.querySelector('.embedVideoSource').src = video;
+        modal.querySelector('.embedVideoSource').style.display = 'block';
+        return fileType = '0';
+      };
+
+
     };
 
 });
