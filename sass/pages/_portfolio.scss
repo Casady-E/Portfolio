@@ -8,7 +8,7 @@
     font-weight: 700;
     margin-bottom: 10vh;
     width: 100%;
-    background-color: $second-color;
+    background-color: #3c3c3c;
     color: #ffffff;
     padding: 5vh;
     @include breakpoint(small){
@@ -224,7 +224,6 @@ border-radius: 40px;
   margin: auto;
   height: inherit;
   overflow-y: scroll;
-  margin: auto;
   text-align: center;
   @include breakpoint(small){
     padding: 0;
