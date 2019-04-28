@@ -14,7 +14,7 @@
   font-size: 1.5em;
   border: none;
   outline: none;
-  background-color: #4b7a00;
+  background-color: #525252;
   color: white;
   cursor: pointer;
   padding: 2vh 2vw;
@@ -24,6 +24,6 @@
 }
 
 #return-to-top:hover {
-  background-color: #555;
-  color: $main-color;
+  background-color: $second-color;
+  color: #ffffff;
 }
