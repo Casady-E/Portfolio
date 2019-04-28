@@ -34,6 +34,7 @@ $dropDown       : true;
       border-radius: .25rem;
       font-size: 1em;
       margin: 0 0.5em;
+      text-align: center;
       &:not(.disabled) {
         &:hover, &:focus {
           color: $navHighlight;
