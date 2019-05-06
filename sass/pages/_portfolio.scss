@@ -209,13 +209,12 @@ border-radius: 0px 0px 40px 40px;
   padding: 0px;
   border-bottom: 0px;
   line-height: 1;
-  @include breakpoint(small){
-    margin-bottom: 5vh;
-    margin-top: 5vh;
-  }
+  margin-bottom: 5vh;
+  margin-top: 5vh;
 .close{
   font-size: 1.5em;
   margin-right: 5vw;
+  padding-bottom: 0px;
 
 }
 }
