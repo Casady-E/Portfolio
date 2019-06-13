@@ -131,10 +131,19 @@ document.addEventListener('mouseover', function(event){
       let title = item.dataset.title;
       let desc = item.querySelector(".desc").innerText;
       let modal = document.querySelector('.modal');
+      let link = item.dataset.link;
+      let linkDesc = item.dataset.desc;
       modal.querySelector('.modal-title').textContent = title;
       modal.querySelector('.modal-desc').textContent = desc;
+      modal.querySelector('.modal-link').innerText = linkDesc;
+      modal.querySelector('.modal-link').href = link;
       item.removeEventListener('click', function(event){});
       let fileType = getFilePathExtension(item.dataset.src);
+      if(link == undefined){
+        modal.querySelector('.modal-link').style.display = "none";
+      } else if (link !== undefined){
+        modal.querySelector('.modal-link').style.display = "block";
+      }
       if(fileType == 'jpg' || fileType == 'png' ){
         let image = item.dataset.src
         modal.querySelector('.enlargeImageModalSource').src = image;
