@@ -1,3 +1,15 @@
+.body-container{
+  position: absolute;
+  left:0;
+  width: 75vw;
+  z-index: 1000;
+  padding: 0;
+  overflow: hidden;
+  @include breakpoint(small){
+    width: 100%;
+  }
+}
+
 .intro{
 
 /*  background: #ff752b; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
@@ -95,14 +107,14 @@ min-height:60vh;
   padding: 5vh 25vw;
   margin: auto;
   @include breakpoint(large){
-    padding: 5vh 15vw;
+    padding: 10vh 15vw;
   }
   @include breakpoint(small){
     padding: 5vh 10vw
   }
 
   h3{
-    font-weight: 400;
+    font-weight: 300;
     padding: 0vh 0vw;
     text-align: left;
     color: #000000;
