@@ -1,25 +1,65 @@
 
+.nav-container{
+    z-index: 1500;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  width: 25vw;
+  margin: auto;
+  background-color: #3C3C3C;
+  overflow: hidden;
+  padding: 0;
+  -webkit-box-shadow: -10px 0px 22px 0px rgba(0,0,0,0.5);
+  box-shadow: -10px 0px 22px 0px rgba(0,0,0,0.5);
+  @include breakpoint(small){
+    overflow: auto;
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
 $dropDown       : true;
 
 .navbar {
-  background-color: $main-color;
-  width: 100%;
+  position: absolute;
   margin: auto;
-  top: 0;
-  left: 0;
+  width: 100%;
+  height: 100%;
+
   border-bottom: 2px;
-  z-index: 1500;
   color: #ffffff;
-  padding: 0rem 1rem;
+@include breakpoint(small){
+  position: relative;
+  padding: 0rem 5em;
+  height: auto;
+}
   .navbar-brand {
+    width: 100%;
+    margin: auto;
     color: $navDefault;
+    text-align: center;
+      @include breakpoint(small){
+        margin: auto;
+        height: 100%;
+
+        width: auto;
+        left: 0;
+      }
     &:hover, &:focus {
       color: $navHighlight; }
     img {
-      max-width: 5em;
-      min-width: 4em;
+      width: 8em;
+      @include breakpoint(large){
+        width: 10em;
+      }
       @include breakpoint(small){
-        max-width: 4em;
+        width: 6em;
+      }
+      @include breakpoint(xsmall){
+        width: 6em;
       }
     }}
   .navbar-text {
@@ -29,6 +69,8 @@ $dropDown       : true;
       &:hover, &:focus {
         color: $navHighlight; }}}
   .navbar-nav {
+    width: 100%;
+    margin: auto;
     .nav-link {
       color: #ffffff;
       border-radius: .25rem;
@@ -55,17 +97,18 @@ $dropDown       : true;
         background-color: $navBgHighlight; }}}
   .navbar-toggler {
     border-width: 0px;
-    border-color: #CACACA;
+    border-color: #ffffff;
     -webkit-transition: all .5s;
   transition: all .5s;
-    .navbar-toggler-icon {
-      border-color: #CACACA;
+}
+  .navbar-light .navbar-toggler-icon {
+      border-color: #ffffff;
 
       &:hover, &:focus {
 
-        border-color: #CACACA;}
+        border-color: #ffffff;}
     }
-      }
+
   .navbar-collapse,
   .navbar-form {
     border-color: $navDefault; }
@@ -76,17 +119,31 @@ $dropDown       : true;
 
 
 
-
+/*
 .large-nav{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  .navbar-toggler {
-    background-color: $main-color;
+  */
+/*  .navbar-toggler {
+    background-color: #3C3C3C;
+    position: absolute;
+    right: 5vw;
+    top: 10vh;
+    .navbar-toggler-icon {
+        border-color: #ffffff;
+
+        &:hover, &:focus {
+
+          border-color: #ffffff;}
+      }
   }
+  */
 
-
+/*
 }
+*/
+/*
 .large-nav.sticky.is-sticky {
   opacity: 1;
   position: fixed;
@@ -95,8 +152,8 @@ $dropDown       : true;
   top: 0;
   z-index: 1000;
   width: 100%;
-  -webkit-box-shadow: 0px 10px 35px -4px rgba(0,0,0,0.75);
-    box-shadow: 0px 10px 35px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.75);
     background-color: #ffffff;
   padding: 0.5rem 1rem;
     .nav-link {
@@ -113,7 +170,7 @@ $dropDown       : true;
   background-color: #ffffff;
 }
 }
-
+*/
 
 @include respond-to('small') {
   .navbar-expend-sm .navbar-nav .show .dropdown-menu {
@@ -190,3 +247,69 @@ $dropDown       : true;
     }
 }
 */
+
+/* remove navbar button stying */
+.navbar-toggler {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 5vh;
+  @include breakpoint(medium){
+    top: 2.5vh;
+  }
+  /* remove the blue outline when active or focused */
+  &:active, &:focus {
+    outline: 0;
+  }
+  /* basic styles for each icon bar */
+  .icon-bar {
+    display: block;
+    width: 2em;
+    height: 0.2em;
+    border-radius: 5px;
+    margin: 0.5em 0 0.5em 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: $main-color;
+    /* .navbar open top .icon-bar rotated down 45° */
+    &:nth-of-type(1) {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+              -webkit-transform-origin: 10% 35%;
+                      transform-origin: 10% 35%;
+    }
+    /* .navbar open middle .icon-bar invisible */
+    &:nth-of-type(2) {
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    /* .navbar open bottom .icon-bar rotated up 45° */
+    &:nth-of-type(3) {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+              -webkit-transform-origin: -5% 5%;
+                      transform-origin: -5% 5%;
+    }
+  }
+  /* styles for when .navbar is closed */
+  &.collapsed {
+    .icon-bar {
+      /* .navbar closed top .icon-bar no rotation - straight */
+      &:nth-of-type(1) {
+	      -webkit-transform: rotate(0);
+	              transform: rotate(0);
+      }
+      /* .navbar open middle .icon-bar visible */
+      &:nth-of-type(2) {
+	      opacity: 1;
+	      filter: alpha(opacity=100);
+      }
+      /* .navbar open bottom .icon-bar no rotation - straight */
+      &:nth-of-type(3) {
+	      -webkit-transform: rotate(0);
+	              transform: rotate(0);
+      }
+    }
+  }
+}
