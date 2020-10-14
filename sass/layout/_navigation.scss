@@ -9,7 +9,6 @@
   background-color: #3C3C3C;
   overflow: hidden;
   padding: 0;
-  -webkit-box-shadow: -10px 0px 22px 0px rgba(0,0,0,0.5);
   box-shadow: -10px 0px 22px 0px rgba(0,0,0,0.5);
   @include breakpoint(small){
     overflow: auto;
@@ -51,9 +50,9 @@ $dropDown       : true;
     &:hover, &:focus {
       color: $navHighlight; }
     img {
-      width: 8em;
+      width: 12em;
       @include breakpoint(large){
-        width: 10em;
+        width: 12em;
       }
       @include breakpoint(small){
         width: 6em;
