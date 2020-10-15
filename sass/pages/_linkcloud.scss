@@ -1,8 +1,12 @@
 .link-cloud-container {
   width: 100%;
   margin: auto;
+  height: 95vh;
 
   background-color: $main-color;
+  @include breakpoint(small){
+    height:auto;
+  }
   h2 {
     font-style: normal;
     font-size: 6em;
