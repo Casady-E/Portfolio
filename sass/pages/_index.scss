@@ -5,6 +5,7 @@
   z-index: 1000;
   padding: 0;
   overflow: hidden;
+  background-color: #ececec;
   @include breakpoint(small){
     width: 100%;
   }
@@ -19,6 +20,13 @@ height: auto;
   color: #ffffff;
   padding: 0;
   margin: 0;
+  .intro-text{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 20vh 20vw;
+  }
+  /*
   .intro-img{
     width: 100%;
     height: auto;
@@ -36,6 +44,7 @@ height: auto;
 
   }
 }
+*/
   @include breakpoint(xsmall){
     min-height: 30vh;
   }
