@@ -1,0 +1,44 @@
+.services-container {
+  width: 100%;
+  padding: 0vh;
+  padding-bottom: 20vh;
+  padding-top: 10vh;
+  background-color: $main-color;
+  h2 {
+    font-size: 4em;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5vh;
+    width: 100%;
+
+    color: #ffffff;
+    padding: 5vh;
+  }
+  .services-icon-container{
+    padding: 0 10vh;
+    @include breakpoint(medium){
+    padding: 0 10vh;
+  }
+  @include breakpoint(small){
+    padding: 0 5vh;
+  }
+    .services-item{
+      display: inline-block;
+     text-align: center;
+
+     .services-icon {
+      color: #ffffff;
+      margin-bottom: 0.5em;
+     }
+    h3 {
+       font-size: 2em;
+       font-weight: 700;
+      color: #ffffff;
+    }
+    p{
+      font-size: 1em;
+      color: #ffffff;
+    }
+    }
+  }
+  }
