@@ -43,6 +43,10 @@
   padding:0;
   margin: 0;
   overflow: hidden;
+  background-color: #fff;
+  &:hover{
+    background-color:  $second-color;
+  }
     .desc{
       display:none;
     }
@@ -62,8 +66,7 @@
       padding: 1.5em 0;
       text-align: center;
       font-size: 1.5em;
-      background-color: transparent;
-      color: #000;
+      color: #fff;
       opacity: 0;
     }
   }
