@@ -1,7 +1,6 @@
 .contact-container {
   width: 100%;
   margin: auto;
-
   background-color: $main-color;
   h2 {
     font-size: 4em;
@@ -15,7 +14,23 @@
 .contact-text{
   text-align: center;
   color: #fff;
-  padding: 10vh 10vw;
+  padding: 0 10vw;
+}
+.contact-btn-container{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin: 5vh 0 10vh 0;
+
+}
+.contact-btn{
+  border-color: #fff;
+  color: #fff;
+  &:hover{
+    border-color: #000;
+    color: $main-color;
+    background-color: #fff;
+  }
 }
 .contact-info{
   text-align: center;
@@ -38,9 +53,9 @@
     color: #ffffff;
     text-decoration: none;
     &:hover, &:focus {
-      color: #3c3c3c;
+      color: $second-color;
       .contact-icon {
-        color: #3c3c3c;
+        color: $second-color;
       }
   }
   }
